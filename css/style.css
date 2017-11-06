@@ -1,0 +1,348 @@
+body {
+    background-color: #F1F1A0;
+    color: #616464;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+
+p {
+    text-indent: 1em;
+}
+#index-text {
+    width: 100%;
+}
+/*/////////////////
+NAVIGATION INSIDE OTHER PAGES of MOBILE
+//////////////////*/
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "home-logo navigation-buttons"
+}
+nav a{
+    display: block;
+    margin-left: -8px;
+    text-decoration: none;
+    color: black;
+
+}
+#home-logo{
+     background: #F1F1A0;
+     height: 140px;
+}
+.navigation-buttons{
+    grid-area: navigation-buttons;
+    height: 70px;
+}
+
+#about-me_nav {
+    background: white;
+    text-align: center;
+    font-size:30px;
+}
+
+#flat-design_nav {
+    background: #48D6A5;
+    text-align: center;
+    font-size: 30px;
+}
+
+#about-design_nav {
+    background-color: #06B4C7;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*/////////////////
+NAVIGATION INSIDE OTHER PAGES of DESKTOP
+//////////////////*/
+
+
+@media all and (min-width:900px){
+nav{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+        "home-logo navigation-buttons"
+    }
+    body{
+        text-align: center;
+    }
+    #home-logo_anchor{
+        justify-self: right;
+        margin-right: 10%
+        }
+#home-logo{
+     height: 100px;
+     grid-area: home-logo;
+}
+.navigation-buttons{
+    grid-area: navigation-buttons;
+    height: 50px;
+    width: 350px;
+    margin-left: -10%;
+}
+
+#about-me_nav {
+    font-size:44px;
+}
+
+#flat-design_nav {
+    font-size: 44px;
+}
+
+#about-design_nav {
+    font-size: 44px;
+}
+}
+
+/*///////////////////////
+Mobile version INDEX
+///////////////////////*/
+
+.index-text-properties {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+}
+
+section {
+    width: 100%;
+    display: grid;
+    font-size: 5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo about-the-design"
+        "flat-design ."
+        ". about-me"
+}
+
+#front-logo {
+    margin: auto;
+    grid-area: logo;
+    width: 58%;
+    height: inherit;
+}
+
+#about-the-design {
+    grid-area: about-the-design;
+    height: 33vh;
+    width: 50vw;
+    background-color: #06B4C7;
+}
+
+#flat-design {
+    grid-area: flat-design;
+    height: 33vh;
+    width: 50vw;
+    background-color: #48D6A5;
+}
+
+#about-me {
+    grid-area: about-me;
+    height: 33vh;
+    width: 50vw;
+    background-color: white;
+    color: black;
+}
+
+aside {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+
+/* ////////////////////////////////
+tablet/desktop INDEX
+//////////////////////////////////*/
+
+@media all and (min-width:900px) {
+    section {
+        display: grid;
+        font-size: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo . about-the-design"
+            "aside flat-design ."
+            "aside . about-me"
+    }
+    #front-logo {
+        grid-area: logo;
+        width: 250px;
+    }
+    #about-the-design {
+        width: 300px;
+        grid-area: about-the-design;
+        background-color: #06B4C7;
+    }
+    #flat-design {
+        grid-area: flat-design;
+        background-color: #48D6A5;
+        width: 300px;
+        margin-left: auto;
+    }
+    #about-me {
+        grid-area: about-me;
+        width: 300px;
+    }
+    aside {
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-area: aside;
+        display: block;
+    }
+    footer {
+        display: block;
+    }
+}
+
+
+/*//////////////////
+ABOUT THE DESIGN
+////////////////////*/
+
+#about-the-design_page {
+    background-color: #06B4C7;
+}
+
+#moodboard {
+    width: 100%;
+}
+
+#sketch {
+    width: 100%;
+}
+.logos {
+    width: 50%;
+}
+#image-assets_link {
+    text-decoration: underline;
+}
+#folder-structure {
+     width: 100%;
+}
+
+
+/*///////////////////
+The color boxes in ABOUT THE DESIGN
+///////////////////*/
+
+.box {
+    border: 1px solid;
+    border-color: black;
+    width: 15vw;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 5px
+}
+
+.yellow {
+    background-color: #F1F1A0;
+    color: #616464;
+}
+
+.green {
+    background-color: #48D6A5;
+}
+
+.blue {
+    background-color: #06B4C7;
+}
+
+.violet {
+    background-color: #7E0152;
+}
+
+.gray {
+    background-color: #616464;
+}
+
+
+/*
+///////////////////////////////
+Image assets.html
+///////////////////////////////
+*/
+#back-to-about-the-design{
+    background-color: #06B4C7;
+}
+.assets {
+    width: auto
+}
+
+
+/*///////////////////
+ABOUT ME
+///////////////////*/
+
+#about-me_page {
+    background-color: white;
+}
+
+#profile {
+     width: 100%;
+     margin-top: 40px;
+}
+
+
+/*///////////////////
+FLAT DESIGN
+///////////////////*/
+
+#flat-design_page {
+    background-color: #48D6A5;
+}
+#takeoff{
+     width: 100%;
+}
+#color-palette_image{
+   width: 100%;
+}
+#quicksand-image{
+   width: 100%;
+}
+/*///////////////////
+IMAGE AND PARAGRAPH BREAKPOINT
+///////////////////*/
+
+@media all and (min-width:900px){
+    main{
+        padding: 0 18vw;
+    }
+    #takeoff{
+    max-width: 600px;
+}
+    #profile {
+    max-width: 600px;
+    margin-top: 40px;
+}
+    #quicksand-image{
+    max-width: 600px;
+}
+    #color-palette_image{
+    max-width: 600px;
+}
+    #moodboard {
+   max-width: 600px;
+}
+
+#sketch {
+   max-width: 600px;
+}
+.logos {
+    max-width: 300px;
+}
+#folder-structure {
+    max-width: 600px;
+}
+}
